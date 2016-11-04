@@ -14,10 +14,11 @@ VBoxClient --display
 VBoxClient --checkhostversion
 VBoxClient --seamless
 
-# TeamViewer
-dpkg --add-architecture i386
-dpkg -i /data/teamviewer_11.0.67687_i386.deb
-apt-get -y install -f
-
 # install XDM to have X started automatically
 apt-get install -y xdm
+
+# TeamViewer
+dpkg --add-architecture i386
+apt-get update
+dpkg -i /data/teamviewer_11.0.67687_i386.deb
+apt-get install -y -f
