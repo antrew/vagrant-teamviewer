@@ -18,3 +18,6 @@ VBoxClient --seamless
 dpkg --add-architecture i386
 dpkg -i /data/teamviewer_11.0.67687_i386.deb
 apt-get -y install -f
+
+# install XDM to have X started automatically
+apt-get install -y xdm
