@@ -22,6 +22,6 @@ Vagrant.configure(2) do |config|
     vb.memory = "2000"
   end
 
-  config.vm.provision "shell", path: "10_root.sh"
-  config.vm.provision "shell", path: "20_user.sh", privileged: "false"
+  config.vm.provision "shell", path: "provision_root.sh"
+  config.vm.provision "shell", path: "provision_user.sh", privileged: "false"
 end
