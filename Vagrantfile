@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
   #config.vm.box = "ubuntu/xenial64"
 
   # Ubuntu 15.10
-  config.vm.box = "ubuntu/wily64"
+  config.vm.box = "debian/stretch64"
 
   # Ubuntu 14.04 LTS
   #config.vm.box = "ubuntu/trusty64"
