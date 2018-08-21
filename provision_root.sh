@@ -13,7 +13,6 @@ VBoxClient --checkhostversion
 VBoxClient --seamless
 
 # TeamViewer
-dpkg --add-architecture i386
 apt-get update
-dpkg -i /data/teamviewer_12.0.76279_i386.deb
+dpkg -i /data/teamviewer_13.2.13582_amd64.deb
 apt-get install -y -f
