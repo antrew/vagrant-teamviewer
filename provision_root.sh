@@ -14,5 +14,5 @@ VBoxClient --seamless
 
 # TeamViewer
 apt-get update
-dpkg -i /data/teamviewer_13.2.13582_amd64.deb
+dpkg -i /data/teamviewer_amd64.deb
 apt-get install -y -f
