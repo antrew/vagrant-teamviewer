@@ -12,6 +12,9 @@ Vagrant.configure(2) do |config|
  
     # Customize the amount of memory on the VM:
     vb.memory = "2000"
+
+    # Increase Video RAM size to enable bigger screen resolutions
+    vb.customize ["modifyvm", :id, "--vram", "128"]
   end
 
   config.vm.provision "shell", path: "provision_root.sh"
